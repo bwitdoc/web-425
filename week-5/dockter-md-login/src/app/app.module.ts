@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { MatCardModule, MatButtonModule, MatToolbarModule, MatFormFieldModule, MatIconModule, MatInputModule, MatMenuModule } from '@angular/material'
+import { FlexLayoutModule } from '@angular/flex-layout'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule, MatButtonModule, MatFormFieldModule, MatInputModule } from '@angular/material'
 
 @NgModule({
   declarations: [
@@ -12,12 +12,17 @@ import { MatCardModule, MatButtonModule, MatFormFieldModule, MatInputModule } fr
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
+    MatToolbarModule,
     MatFormFieldModule,
+    MatIconModule,
     MatInputModule,
-    AppRoutingModule
+    MatMenuModule,
+    FlexLayoutModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
