@@ -11,39 +11,3 @@
 
     <app-child [greeting]="myGreeting" [user]="myUser"></app-child>
 </div>
-
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <button mat-icon-button>
-      <mat-icon (click)="sidenav.toggle()">
-        <img src="https://cdn0.iconfinder.com/data/icons/essentials-9/128/__Menu-512.png" width="25"/>
-      </mat-icon>
-    </button>
-    <span class="menu-spacer"></span>
-    <div>
-      <a mat-button [routerLink]="'/home'">Home</a>
-      <a mat-button [routerLink]="'/child'">Child</a>
-    </div>
-  </mat-toolbar-row>
-</mat-toolbar>
-
-<mat-sidenav-container>
-  <mat-sidenav #sidenav>
-    <mat-nav-list>
-      <a mat-list-item [routerLink]="'/'">Test Link 1</a>
-      <a mat-list-item [routerLink]="'/'">Test Link 2</a>
-      <a mat-list-item [routerLink]="'/'">Test Link 3</a>
-      <a mat-list-item [routerLink]="'/'">Test Link 4</a>
-      <a mat-list-item [routerLink]="'/'">Test Link 5</a>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <div class="container" style="height: 100vh;">
-      <div class="row">
-        <div class="col-12 mt-3">
-          <router-outlet></router-outlet>
-        </div>
-      </div>
-    </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>

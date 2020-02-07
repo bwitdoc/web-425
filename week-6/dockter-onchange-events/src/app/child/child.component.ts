@@ -3,7 +3,7 @@ import { Component, OnInit, Input, OnChanges, SimpleChange, SimpleChanges } from
 @Component({
   selector: 'app-child',
   template: `
-    <div class="child>
+    <div class="child">
       <h2>Child</h2>
       <div>Greeting: {{ greeting }}</div>
       <div>User name: {{ user.name }}</div>
