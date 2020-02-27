@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+  </head>
+
+  <!-- nav bar -->
+<mat-toolbar class="menu" role="header" color="primary">
+  <mat-toolbar-row>
+    <span class="menu-spacer"></span>
+    <div>
+      <button mat-button [routerLink]="'/home'">
+      <mat-icon>home</mat-icon>
+        Home</button>
+
+      <button mat-button [routerLink]="'/order'">
+      <mat-icon>shopping_cart</mat-icon>
+      Order</button>
+
+      <button mat-button [routerLink]="'/about'">
+      <mat-icon>info</mat-icon>
+      About Us</button>
+
+      <button mat-button [routerLink]="'/contact'">
+      <mat-icon>contact_support</mat-icon>
+      Contact Us</button>
+      </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<!-- end nav bar -->
+
+<div class="container" style="height: 100vh;">
+  <div class="row">
+    <div class="col-12 mt-3">
+      <mat-card>
+        <div class="row">
+          <div class="col-8">
+            Thanks for visiting Bob's Computer Repair Shop. You break it, we fix it.
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>
+  
+<router-outlet></router-outlet>
